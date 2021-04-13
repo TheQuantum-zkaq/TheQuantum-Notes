@@ -1,0 +1,20 @@
+Win + R 指令：   
+                      control              打开控制面板
+                      mstsc                打开远程桌面
+                       services.msc     打开计算机服务
+
+dir                     显示当前目录
+cd                     跳转XX页面     
+cd ../                 跳到上级目录  ./  跳到本级目录    .. 跳到最外面
+netstat -ano      查看本机端口的命令（端口、服务）      
+                   端口：计算器和外界通信的（默认）渠道，不同的软件会走不同的特定端口
+                         80端 ：网站   445端口：SMB服务 3389端口：远程桌面服务  1433端口：MSSQL服务
+                   端口范围是0--65535   0端口是预留端口，一般用不到 
+
+net user              查看本机用户 可以修改用户名密码（net user admin xxx） 添加用户 (net user 用户名 密码 /add（/del删除）)
+whoami              查看我的权限
+systeminfo          查看系统状态（版本 补丁 内存）
+ipconfig              查看本机内网或公网IP
+net localgroup adminstrators admin /ad   给admin用户提权 
+
+sc delete MySQL3  删除计算机管理服务
